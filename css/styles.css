@@ -25,6 +25,7 @@ body {
 }
 a {
   text-decoration: none;
+  display: inline-block;
 }
 ul,
 ol {
@@ -169,7 +170,30 @@ img {
 /* =============/1 section hero===========*/
 
 /* =============2 section benefit=========== */
+.benefit {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding: 120px 0;
+}
 
+.benefit-list {
+  display: flex;
+  gap: 24px;
+}
+.benefit-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc((100% - 72px) / 4);
+  gap: 8px;
+}
+.benefit .text {
+  color: #434455;
+  text-align: left;
+}
 .text {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -179,30 +203,11 @@ img {
   color: #434455;
   align-self: flex-start;
 }
-.benefit {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding: 120px 0;
-}
 .benefit-title {
   align-items: start;
 }
 .title.unvisible {
   align-items: start;
-}
-.benefit-list {
-  display: flex;
-  gap: 24px;
-}
-.benefit-link {
-  width: calc((100% - 72px) / 4);
-  display: flex;
-  gap: 8px;
-  flex-direction: column;
-  align-content: flex-start;
 }
 .benefit-div {
   display: flex;
@@ -297,37 +302,25 @@ img {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-/* in the body */
 
-.portfolio-page .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-transform: capitalize;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
-.portfolio-page li .title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+.title {
+  padding-top: 32px;
+  text-align: left;
 }
-
-.portfolio-page .text {
-  /* in the body */
+.portfolio .text {
+  text-align: left;
 }
-.portfolio-name {
-  background-color: #ffffff;
-}
-
 /* =======/4 section portfolio=========== */
 
 /* ======footer========== */
 .footer-page {
   background: #2e2f42;
+  padding: 100px 0;
 }
 .footer-page .logo-part {
   font-family: 'Raleway', sans-serif;
@@ -340,4 +333,20 @@ img {
 }
 .footer-page .text {
   color: #f4f4fd;
+  max-width: 264px;
+  margin-left: 156px;
+  text-align: left;
+}
+.footer-page .logo {
+  margin-bottom: 16px;
+}
+.logo {
+  margin-left: 156px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
