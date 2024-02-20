@@ -131,7 +131,7 @@ img {
 /* ==========1 section hero======= */
 .hero {
   background: #2e2f42;
-  padding-top: 188px 0;
+  padding: 188px 0;
 }
 
 .hero-container {
@@ -157,10 +157,12 @@ img {
   letter-spacing: 0.04em;
   color: #fff;
   border-radius: 4px;
+  border: none;
   padding: 16px 32px;
   min-width: 169px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   margin-top: 48px;
+  height: 56px;
 }
 
 .btn:hover,
@@ -214,7 +216,7 @@ img {
   flex-direction: column;
   gap: 8px;
 }
-.unvisible {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -241,6 +243,10 @@ img {
   display: flex;
   gap: 24px;
 }
+
+.team-info {
+  padding: 32px 0;
+}
 .team-list-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -260,7 +266,14 @@ img {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-.title {
+.team .title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+/* .title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -268,8 +281,8 @@ img {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
-}
-.text {
+} */
+.team .text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
