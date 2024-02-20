@@ -207,6 +207,7 @@ img {
 }
 .benefit-title {
   align-items: start;
+  margin-bottom: 8px;
 }
 .title.unvisible {
   align-items: start;
