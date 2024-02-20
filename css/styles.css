@@ -345,7 +345,7 @@ img {
   text-transform: uppercase;
   color: #f4f4fd;
 }
-.footer-page .text {
+.container .text {
   color: #f4f4fd;
   max-width: 264px;
   margin-left: 156px;
@@ -363,4 +363,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
