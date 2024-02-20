@@ -274,6 +274,9 @@ img {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+.team-info .text {
+  text-align: center;
+}
 /* .title {
   font-weight: 500;
   font-size: 20px;
