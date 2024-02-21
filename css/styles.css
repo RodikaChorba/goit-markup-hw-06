@@ -309,6 +309,12 @@ img {
 /* ====== /3 section img========== */
 
 /* =======4 section portfolio=========== */
+.portfolio {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -324,10 +330,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 .title {
   padding-top: 32px;
   text-align: left;
+  margin-bottom: 8px;
 }
 .portfolio .text {
   text-align: left;
