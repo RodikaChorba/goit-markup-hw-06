@@ -243,14 +243,14 @@ img {
 }
 
 /* =========== Team Section styles =========== */
-.team-list {
-  display: flex;
-  gap: 24px;
-}
-
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item-name {
@@ -295,12 +295,9 @@ img {
 .team-social-list {
   display: flex;
   text-align: center;
-  gap: 16px;
+  gap: 24px;
   justify-content: center;
   margin-top: 8px;
-}
-.team-social-list-item {
-  gap: 24px;
 }
 
 .team-social-list-item .item-link {
