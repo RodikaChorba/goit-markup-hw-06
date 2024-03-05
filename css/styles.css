@@ -456,7 +456,7 @@ img {
     max-width: 115px;
     margin-bottom: 16px;
     color: #4d5ae5;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     line-height: 1.17;
@@ -745,6 +745,7 @@ footer .container {
 .footer-title {
     margin-bottom: 16px;
     color: #fff;
+    font-weight: 500;
 }
 .footer-form .form {
     display: flex;
