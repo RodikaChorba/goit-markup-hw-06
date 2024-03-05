@@ -456,7 +456,7 @@ img {
     max-width: 115px;
     margin-bottom: 16px;
     color: #4d5ae5;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     line-height: 1.17;
@@ -698,9 +698,9 @@ footer .container {
     letter-spacing: 0.48px;
 }
 
-/* #endregion */
+/* ======== endregion ========== */
 
-/* #region modal window */
+/* ========= region modal window ============ */
 
 .backdrop {
     position: fixed;
