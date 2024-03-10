@@ -1,0 +1,31 @@
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .hero-container {
+        max-width: 768px;
+        padding: 112px 0;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-image-hero.jpg');
+    }
+    .main-title {
+        max-width: 496px;
+        margin-bottom: 36px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+        padding: 0 15px;
+    }
+    .hero-container {
+        max-width: 1440px;
+        padding: 188px 0;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-image-hero.jpg');
+    }
+    .main-title {
+        margin-bottom: 48px;
+    }
+}
