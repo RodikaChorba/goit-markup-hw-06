@@ -1,6 +1,55 @@
+/* =========== tab 768px ============ */
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;
+        max-width: 768px;
+    }
+    .address-link {
+        display: block;
+    }
+    .page-header {
+        padding: 0;
+    }
+    .logo-header {
+        margin-right: 76px;
+        color: #4d5ae5;
+        font-weight: 700;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    .menu {
+        display: flex;
+        gap: 12px;
+    }
+    .menu-item .underline {
+        position: relative;
+        color: #404bbf;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .underline {
+        position: relative;
+        color: #404bbf;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .underline::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: #404bbf;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 0.25s;
+        transform: scaleX(1);
+    }
+    .burger-menu {
+        display: none;
     }
     .hero-container {
         max-width: 768px;
@@ -13,12 +62,90 @@
         font-size: 56px;
         line-height: 1.07;
     }
+    .page-contact {
+        display: block;
+    }
+    .address-link {
+        color: #434455;
+        font-size: 12px;
+        line-height: 1, 16;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .address-link:hover,
+    .address-link:focus {
+        color: #404bbf;
+    }
+    .benefits-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    .benefits-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+    .benefits-list-title {
+        text-align: left;
+    }
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal {
+        width: 288px;
+        padding: 72px 24px 24px 24px;
+        border-radius: 4px;
+        background: #fcfcfc;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translate(-50%, -50%);
+    }
+    .team-container {
+        padding: 0 108px;
+    }
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+    .team-list-item {
+        width: calc((100% - 1 * 24px) / 2);
+    }
 }
+/* =========== /tab 768px ============ */
 
+/* ============ PC 1158px ============= */
 @media screen and (min-width: 1158px) {
     .container {
-        width: 1158px;
+        max-width: 1158px;
         padding: 0 15px;
+    }
+    .section {
+        padding: 120px 0;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .page-contact {
+        display: block;
+    }
+    .logo-header {
+        margin-right: 76px;
+    }
+    .contact-list {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: space-between;
+    }
+    .address-link {
+        font-size: 16px;
+        line-height: 1, 5;
     }
     .hero-container {
         max-width: 1440px;
@@ -28,4 +155,46 @@
     .main-title {
         margin-bottom: 48px;
     }
+    .benefits-list {
+        gap: 24px;
+        align-items: center;
+    }
+    .benefits-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+    .benefits-list-title {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .benefits-list-text {
+        font-weight: 400;
+    }
+    .benefits-list-item .icon-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+        margin-bottom: 8px;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        background: #f4f4fd;
+    }
+    .benefits-list-item .icon-box .icon {
+        fill: #2e2f42;
+    }
+    .team-section {
+        padding: 0 120px;
+    }
+    .team-container {
+        padding: 0 15px;
+    }
+    .team-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+    .team-list-item {
+        width: calc((100% - 3 * 24px) / 4);
+    }
 }
+
+/* ============ /PC 1158px ============= */
