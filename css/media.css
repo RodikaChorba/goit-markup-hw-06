@@ -155,6 +155,11 @@
         min-height: 584px;
         padding: 72px 24px 24px 24px;
     }
+    /* mobile menu */
+    .mobile-menu {
+        display: none;
+    }
+    /* /mobile menu */
 }
 /* =========== /tab 768px ============ */
 
@@ -221,6 +226,9 @@
     .benefits-list-item .icon-box .icon {
         fill: #2e2f42;
     }
+    /* /benefits */
+
+    /* team */
     .team-container {
         padding: 0 15px;
     }
@@ -231,9 +239,14 @@
     .team-list-item {
         width: calc((100% - 3 * 24px) / 4);
     }
+    /* /team */
+
+    /* portfolio */
     .portfolio-list-item {
         width: calc((100% - 24px * 2) / 3);
     }
+    /* /portfolio */
+
     /* footer */
 
     .page-footer {
@@ -320,7 +333,4 @@
         display: block;
     }
 }
-
-/*  ============= /footer ================ */
-
 /* ============ /PC 1158px ============= */
