@@ -1,6 +1,15 @@
+@media (min-resolution: 192dpi) {
+    .hero-container {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/dark-bg-mob@2x.jpg');
+    }
+}
+
 /* =========== tab 768px ============ */
 @media screen and (min-width: 768px) {
     .container {
+        width: 768px;
+    }
+    .team-container {
         max-width: 584px;
     }
     .address-link {
@@ -21,7 +30,7 @@
     }
     .menu {
         display: flex;
-        gap: 12px;
+        gap: 40px;
     }
     .menu-item .underline {
         position: relative;
@@ -52,7 +61,12 @@
     .hero-container {
         max-width: 768px;
         padding: 112px 0;
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-image-hero.jpg');
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/dark-bg-tab.jpg');
+    }
+    @media (min-resolution: 192dpi) and (max-width: 1158px) {
+        .hero-container {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/dark-bg-tab@2x.jpg');
+        }
     }
     .main-title {
         max-width: 496px;
@@ -131,6 +145,7 @@
         flex-wrap: wrap;
         gap: 72px 24px;
         align-items: baseline;
+        max-width: calc(264px * 2 + 24px);
     }
     .logo-footer {
         text-align: left;
@@ -168,7 +183,7 @@
 /* ============ PC 1158px ============= */
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1158px;
+        width: 1158px;
         padding: 0 15px;
     }
     .header-container {
@@ -183,9 +198,6 @@
     .page-contact {
         display: block;
     }
-    .logo-header {
-        margin-right: 76px;
-    }
     .contact-list {
         display: flex;
         flex-direction: row;
@@ -199,7 +211,12 @@
     .hero-container {
         max-width: 1440px;
         padding: 188px 0;
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-image-hero.jpg');
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/dark-bg-pc.jpg');
+    }
+    @media (min-resolution: 192dpi) {
+        .hero-container {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/dark-bg-pc@2x.jpg');
+        }
     }
     .main-title {
         margin-bottom: 48px;
@@ -238,8 +255,12 @@
     /* /benefits */
 
     /* team */
+
+    .team-section {
+        padding: 100px 0;
+    }
     .team-container {
-        padding: 120px 15px;
+        max-width: 100%;
     }
     .team-list {
         flex-wrap: nowrap;

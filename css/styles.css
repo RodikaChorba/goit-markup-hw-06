@@ -30,10 +30,13 @@ a {
     text-decoration: none;
 }
 .container {
-    margin-right: auto;
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
+    /* margin-right: auto;
     margin-left: auto;
     padding-right: 16px;
-    padding-left: 16px;
+    padding-left: 16px; */
 }
 
 .section {
@@ -92,9 +95,7 @@ img {
     align-items: center;
 }
 .menu {
-    display: flex;
     display: none;
-    gap: 40px;
 }
 .burger-menu {
     padding: 0;
@@ -177,7 +178,7 @@ img {
     margin-right: auto;
     margin-left: auto;
     padding: 72px 0;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-image-hero.jpg');
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/dark-bg-mob.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,9 +217,6 @@ img {
 /* /hero styles */
 
 /* benefits styles */
-.benefits-container {
-    max-width: 320px;
-}
 .benefits {
     padding: 96px 0;
 }
@@ -267,11 +265,6 @@ img {
     background-color: #f4f4fd;
 }
 
-.team-container {
-    max-width: 296px;
-    padding: 0 28px;
-}
-
 .section-title {
     margin-bottom: 72px;
     color: #2e2f42;
@@ -285,9 +278,11 @@ img {
     display: flex;
     flex-direction: column;
     gap: 72px;
+    align-items: center;
 }
 
 .team-list-item {
+    max-width: fit-content;
     border-radius: 0px 0px 4px 4px;
     background-color: #fff;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -353,9 +348,6 @@ img {
 .section-portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
-}
-.portfolio-container {
-    max-width: 320px;
 }
 .portfolio-title {
     margin-bottom: 72px;
