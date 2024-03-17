@@ -1,7 +1,7 @@
 /* =========== tab 768px ============ */
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;
+        max-width: 584px;
     }
     .address-link {
         display: block;
@@ -28,13 +28,11 @@
         color: #404bbf;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
     .underline {
         position: relative;
         color: #404bbf;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
     .underline::after {
         content: '';
         position: absolute;
@@ -104,9 +102,9 @@
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transform: translate(-50%, -50%);
     }
-    .team-container {
+    /* .team-container {
         padding: 0 108px;
-    }
+    } */
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -126,13 +124,13 @@
     .portfolio-list-item {
         width: calc((100% - 24px) / 2);
     }
+
     /*  ====== Footer ===== */
     .footer-container {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px 24px;
         align-items: baseline;
-        padding: 0 108px;
     }
     .logo-footer {
         text-align: left;
@@ -149,25 +147,32 @@
     .footer-form .form {
         flex-direction: row;
     }
+
     /* backdrop */
     .modal {
         width: 408px;
         min-height: 584px;
         padding: 72px 24px 24px 24px;
     }
+
     /* mobile menu */
     .mobile-menu {
         display: none;
     }
+
     /* /mobile menu */
 }
+
 /* =========== /tab 768px ============ */
 
 /* ============ PC 1158px ============= */
 @media screen and (min-width: 1158px) {
     .container {
-        width: 1158px;
+        max-width: 1158px;
         padding: 0 15px;
+    }
+    .header-container {
+        margin: 0 156px;
     }
     .section {
         padding: 120px 0;
@@ -198,6 +203,10 @@
     }
     .main-title {
         margin-bottom: 48px;
+    }
+    /* .beneffits */
+    .benefits {
+        padding: 120px 0;
     }
     .benefits-list {
         gap: 24px;
@@ -230,7 +239,7 @@
 
     /* team */
     .team-container {
-        padding: 0 15px;
+        padding: 120px 15px;
     }
     .team-list {
         flex-wrap: nowrap;
