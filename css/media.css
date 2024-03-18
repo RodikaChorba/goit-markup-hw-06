@@ -286,6 +286,7 @@
     .footer-container {
         flex-wrap: nowrap;
         gap: 0;
+        max-width: 1158px;
     }
     .page-footer-text {
         max-width: 264px;
