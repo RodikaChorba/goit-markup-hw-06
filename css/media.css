@@ -145,7 +145,7 @@
         flex-wrap: wrap;
         gap: 72px 24px;
         align-items: baseline;
-        max-width: calc(264px * 2 + 24px);
+        max-width: 552px;
     }
     .logo-footer {
         text-align: left;
